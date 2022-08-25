@@ -63,7 +63,6 @@ const main = async () => {
   txn = await rsvpContract.withdrawUnclaimedDeposits(eventID);
   wait = await txn.wait();
   console.log("WITHDRAWN:", wait.events[0].event, wait.events[0].args);
-  
 };
 
 const runMain = async () => {
